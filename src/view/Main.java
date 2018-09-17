@@ -65,6 +65,11 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(jPanel4, java.awt.BorderLayout.PAGE_END);
 
         btAluno.setText("Aluno");
+        btAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAlunoActionPerformed(evt);
+            }
+        });
 
         brOcorrencia.setText("Ocorrencia");
 
@@ -82,17 +87,21 @@ public class Main extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addGap(19, 19, 19)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(brOcorrencia)
                     .addComponent(btAluno))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel5, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlunoActionPerformed
+        
+    }//GEN-LAST:event_btAlunoActionPerformed
 
     /**
      * @param args the command line arguments
